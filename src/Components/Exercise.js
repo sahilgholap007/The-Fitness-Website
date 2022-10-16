@@ -21,19 +21,19 @@ export default function Exersise() {
   return (
     <section className='exersise' id='exercise' >
         <div className="card" id="first" onMouseOver={backgroundone}>
-            <h1>UNLIMITED<br/>CLASSES</h1>
-            <p>Classes curated and developed by the industry's best talent, bringing results through innovation.</p>
+            <h1>EFFECTIVE<br/>WORKOUT PLANS</h1>
+            <p>Workout plans ranging from beginner to advanced. Get started with us and know about the various workout plans that suit you</p>
             <a id="card-link" className='button' href='/Workouts'>Workouts</a>
         </div>
         <div className="card" id='sec' onMouseOver={backgroundtwo}>
-            <h1>PERSONAL<br/>TRAINING</h1>
-            <p>Performance at its highest level with renowned Personal Training.</p>
+            <h1>OPTIMUM<br/>NUTRITION</h1>
+            <p>World's most renowned diet plans are here for you to have you choose for your bulk , cut or personal goals.</p>
             <a id="card-link" className='button' href='/Workouts'>Diet</a>
         </div>
         <div className="card" id='third' onMouseOver={backgroundthree}>
-            <h1>STUDIO<br/>PILATES</h1>
-            <p>A purely authentic Pilates experience that strengthens and creates balance in the body.</p>
-            <a id="card-link" className='button' href='/Workouts'>PRO</a>
+            <h1>CUSTOM<br/>WORKOUT AND DIET </h1>
+            <p>A chance to have a custom workout plan and a personalized diet and a chance to weekly conversations with our trainers and nutritionists.</p>
+            <a id="card-link" className='button' href='/Workouts'>Premium </a>
         </div>
     </section>
   )

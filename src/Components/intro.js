@@ -5,9 +5,9 @@ export default function Intro() {
     <section className='landing'>
         <div className='introduction'>
             <h1>EXPERIENCE ALL<br/><span id='name'>TFW</span> HAS TO OFFER</h1>
-            <p>Unlock your new member benifits</p>
+            <p>WELCOME TO THE WORLD OF VIRTUAL FITNESS</p>
             <div className='button'>
-                <li><a href='/'>JOIN NOW</a></li>
+                <li><a href='/'>Get started</a></li>
             </div>
         </div>
     </section>
