@@ -34,6 +34,19 @@ export default function Workouts() {
             <h1>STUDIO<br/>PILATES</h1>
             <p>A purely authentic Pilates experience that strengthens and creates balance in the body.</p>
             <a id="card-link" className='button' href='/Advance'>Advance</a>
+            <h1>NEW TO<br/>EXERCISE?</h1>
+            <p>First time working out is a great moment. Please get started with this.</p>
+            <a id="card-link" className='button' href='/Workouts'>Beginner</a>
+        </div>
+        <div className="card" id='sec' onMouseOver={backgroundtwo}>
+            <h1>BEEN AT IT<br/>FOR A WHILE</h1>
+            <p>Been working out for a while? GREAT! I guess this is for you.</p>
+            <a id="card-link" className='button' href='/Workouts'>Intermediate</a>
+        </div>
+        <div className="card" id='third' onMouseOver={backgroundthree}>
+            <h1>AN ABSOLUTE<br/>BEAST</h1>
+            <p>Well nothing to say about this. Welcome to the expert side CHAMP.</p>
+            <a id="card-link" className='button' href='/Workouts'>Advance</a>
         </div>
     </section>
   )

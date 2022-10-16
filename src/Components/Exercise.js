@@ -23,17 +23,17 @@ export default function Exersise() {
         <div className="card" id="first" onMouseOver={backgroundone}>
             <h1>UNLIMITED<br/>CLASSES</h1>
             <p>Classes curated and developed by the industry's best talent, bringing results through innovation.</p>
-            <a className='button' href='/Workouts'>Workouts</a>
+            <a id="card-link" className='button' href='/Workouts'>Workouts</a>
         </div>
         <div className="card" id='sec' onMouseOver={backgroundtwo}>
-            <h1>PERSONAL<br/>TRAINING</h1>
-            <p>Performance at its highest level with renowned Personal Training.</p>
+            <h1>OPTIMUM<br/>NUTRITION</h1>
+            <p>World's most renowned diet plans are here for you to have you choose for your bulk , cut or personal goals.</p>
             <a id="card-link" className='button' href='/Workouts'>Diet</a>
         </div>
         <div className="card" id='third' onMouseOver={backgroundthree}>
             <h1>STUDIO<br/>PILATES</h1>
             <p>A purely authentic Pilates experience that strengthens and creates balance in the body.</p>
-            <a className='button' href='/Workouts'>PRO</a>
+            <a id="card-link" className='button' href='/Workouts'>PRO</a>
         </div>
     </section>
   )
