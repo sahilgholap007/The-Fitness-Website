@@ -28,7 +28,7 @@ export default function Exersise() {
         <div className="card" id='sec' onMouseOver={backgroundtwo}>
             <h1>OPTIMUM<br/>NUTRITION</h1>
             <p>World's most renowned diet plans are here for you to have you choose for your bulk , cut or personal goals.</p>
-            <a id="card-link" className='button' href='/Workouts'>Diet</a>
+            <a id="card-link" className='button' href='/Diet'>Diet</a>
         </div>
         <div className="card" id='third' onMouseOver={backgroundthree}>
             <h1>STUDIO<br/>PILATES</h1>
