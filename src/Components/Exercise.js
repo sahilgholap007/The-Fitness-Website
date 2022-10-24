@@ -33,7 +33,7 @@ export default function Exersise() {
         <div className="card" id='third' onMouseOver={backgroundthree}>
             <h1>STUDIO<br/>PILATES</h1>
             <p>A purely authentic Pilates experience that strengthens and creates balance in the body.</p>
-            <a id="card-link" className='button' href='/Workouts'>PRO</a>
+            <a id="card-link" className='button' href='/Pro'>PRO</a>
         </div>
     </section>
   )
