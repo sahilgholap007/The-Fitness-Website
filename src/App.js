@@ -7,15 +7,8 @@ import Intermediate from "./pages/Intermediate"
 import Advance from "./pages/Advance"
 import Diet from "./pages/Diet"
 import Pro from "./pages/Pro"
-
-// Advance
-import advanceOne from "./pages/Exercises/Advance/advance-one"
-import advanceTwo from "./pages/Exercises/Advance/advance-two"
-import advanceThree from "./pages/Exercises/Advance/advance-three"
-import advanceFour from "./pages/Exercises/Advance/advance-four"
-import advanceFive from "./pages/Exercises/Advance/advance-five"
-import advanceSix from "./pages/Exercises/Advance/advance-six"
-
+import Signin from "./pages/Pro/Signin"
+import Signup from "./pages/Pro/Signup"
 
 export default function App() {
     return (
@@ -28,13 +21,16 @@ export default function App() {
                 <Route path="/Intermediate" element={<Intermediate />} />
                 <Route path="/Advance" element={<Advance />} />
                 <Route path="/Pro" element={<Pro />} />
-                // Advance
+                
                 <Route path="/Advance/advance-one" element={<advanceOne />} />
                 <Route path="/Advance/advance-two" element={<advanceTwo />} />
                 <Route path="/Advance/advance-three" element={<advanceThree />} />
                 <Route path="/Advance/advance-four" element={<advanceFour />} />
                 <Route path="/Advance/advance-five" element={<advanceFive />} />
                 <Route path="/Advance/advance-six" element={<advanceSix />} />
+                
+                <Route path="Pro/Signin" element={<Signin />} />
+                <Route path="Pro/Signup" element={<Signup />} />
             </Routes>
         </Router>
     )
