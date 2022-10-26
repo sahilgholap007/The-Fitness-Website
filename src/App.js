@@ -9,6 +9,7 @@ import Diet from "./pages/Diet"
 import Pro from "./pages/Pro"
 import Signin from "./pages/Pro/Signin"
 import Signup from "./pages/Pro/Signup"
+import ProLanding from "./pages/Pro/ProLanding"
 
 export default function App() {
     return (
@@ -31,6 +32,7 @@ export default function App() {
                 
                 <Route path="Pro/Signin" element={<Signin />} />
                 <Route path="Pro/Signup" element={<Signup />} />
+                <Route path="Pro/ProLanding" element={<ProLanding />} />
             </Routes>
         </Router>
     )
