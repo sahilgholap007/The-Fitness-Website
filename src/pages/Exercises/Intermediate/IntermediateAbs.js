@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function IntermediateThree() {
+export default function IntermediateAbs() {
     return(
         <>
         </>

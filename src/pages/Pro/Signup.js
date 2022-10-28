@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 // import {db} from '../../firebase-config' 
 // import {collection, addDoc} from "firebase/firestore"
-import { createUserWithEmailAndPassword , onAuthStateChanged} from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import {auth} from '../../firebase-config'
 
 export default function Signup() {
@@ -10,11 +10,11 @@ export default function Signup() {
     const [registerEmail, setRegisterEmail] = useState("");
     const [registerPassword, setRegisterPassword] = useState("");
 
-    const [user, setUser] = useState({});
+    // const [user, setUser] = useState({});
 
-    onAuthStateChanged(auth, (currentUser)=>{
-        setUser(currentUser);
-    })
+    // onAuthStateChanged(auth, (currentUser)=>{
+    //     setUser(currentUser);
+    // })
 
     const register = async () => {
         try {
@@ -53,28 +53,23 @@ export default function Signup() {
     let redirect_Page = () => {
         register();
         let tID = setTimeout(function () {
-            window.location.href = "/Pro/ProLanding";
+            window.location.href = "/Pro/Payment";
             window.clearTimeout(tID);
         }, 2000);
     }
 
     return(
         <section className='Signup-form'>
-            {/* {users.map((user)=>{
-                return(
-                    <div className="test">
-                        <h1>{user.Name}</h1>
-                    </div>
-                );
-            })} */}
-            <h1>user:{user?.email}</h1>
             <div className="Signup-form-container">
                 <h1>Create Account</h1>
                 <input type="text" placeholder="Email..." onChange={(event) => {setRegisterEmail(event.target.value)}} />
                 <input type="password" placeholder="Create Password" onChange={(event) => {setRegisterPassword(event.target.value)}}  />
                 <input type="password" placeholder="Re-Enter Password" />
-                {/*eslint-disable-next-line*/}
-                <a onClick={redirect_Page}>Signup</a>
+                <div>
+                    {/*eslint-disable-next-line*/}
+                    <a onClick={redirect_Page}>Signup</a>
+                    <a href="/Pro/Signin">Login</a>
+                </div>
             </div>
         </section>
     )

@@ -546,9 +546,6 @@ input{
     height: 100vh;
     width: 100%;
     background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .pro-landing h1{
@@ -560,13 +557,20 @@ input{
     color: #fff;
     font-size: 25px;
     margin-top: 20px;
-    border: 3px solid #242B2E;
+    border: 3px solid white;
     border-radius: 5px;
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
     font-family: 'Bebas Neue';
-    font-size: 30px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.pro-landing a:hover{
+    background-color: #fff;
+    transition: .5s;
+    color: #000;
 }
 
 #pad{
@@ -575,4 +579,252 @@ input{
 
 .signin-btns{
     margin-top: 30px;
+}
+
+.Advance{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.exercise-cards{
+    height: 240px;
+    width: 280px;
+    background-color: #242B2E;
+    border: 1px solid #Ffff;
+}
+
+
+h4{
+    color: #fff;
+}
+
+.Flip-card{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.card-container{
+    gap: 100px;
+    perspective: 1000px;
+    display: flex;
+}
+
+.Flip-card:hover {
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+
+.Flip-card-front, .Flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backface-visibility: hidden;
+}
+
+.Flip-card-front{
+    background-color: #242B2E;
+    
+}
+
+.Flip-card-back{
+    background-color: red;
+    transform: rotateY(180deg);
+}
+
+.pro-landing h1{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.pro-nav{
+    margin-top: -450px;
+    margin-left: 70%;
+    position: absolute;
+}
+
+#workout-plan{
+    background-color: #242B2E;
+}
+
+#diet-plan{
+    background-color: #242B2E;
+}
+
+.text-alignment{
+    width: 600px;
+    margin-left: -30%;
+    margin-top: 5%;
+    
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-alignment h1{
+    color: #fff;
+    font-size: 50px;
+}
+
+#pro-btn{
+    margin-top: 50px;
+    margin-right: 67%
+}
+
+
+.payment{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.payment-btn{
+    padding: 25px;
+    color: #fff;
+    background-color: #242B2E;
+    border: 1px solid #fff;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    margin-top: 10x;
+}
+
+.payment-btn:hover{
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.knowmore{
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.knowmore__container{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+}
+
+.knowmore__container p{
+    font-size: 20px;
+}
+
+.dietform{
+    height: 200vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content:flex-end;
+
+}
+
+.dietform__container{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+    margin-top: 10%;
+    left: 0;
+    position: fixed;
+}
+
+.diet-form{
+    height: 130vh;
+    width: 35%;
+    background-color: #242B2E;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.diet-form h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.diet-form input{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.diet-form label{
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+}
+
+
+.custom-workout{
+    height: 200vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content:flex-end;
+}
+
+#btn-a{
+    height: 20px;
+    width: 50px;
+}
+
+
+.workout-form{
+    height: 105vh;
+    width: 35%;
+    background-color: #242B2E;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+.workout-form h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.workout-form input{
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.workout-form label{
+    font-size: 20px;
+    margin-right: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
 }

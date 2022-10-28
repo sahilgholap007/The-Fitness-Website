@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AdvanceFive() {
+export default function AdvanceArms() {
     return(
         <>
         </>

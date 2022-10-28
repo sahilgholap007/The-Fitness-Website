@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function IntermediateSix() {
+export default function BeginnerArms() {
     return(
         <>
         </>

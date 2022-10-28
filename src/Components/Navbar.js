@@ -9,11 +9,9 @@ export default function navbar(){
         </div>
         <div className='Nav'>
         <ul>
-            <li><a href='/'>Premium</a></li>
-            <li><a href='/'>Nutrition</a></li>
+            <li><a href='/Pro'>Premium</a></li>
+            <li><a href='/Diet'>Nutrition</a></li>
             <li><a href='/Workouts'>Workouts</a></li>
-            <li><a href='/'>About</a></li>
-            <li><a href='/'>Contact Us</a></li>
         </ul>
         </div>
     </section>

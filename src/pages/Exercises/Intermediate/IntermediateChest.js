@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function BeginnerFive() {
+export default function IntermediateChest() {
     return(
         <>
         </>

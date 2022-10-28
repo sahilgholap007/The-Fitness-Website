@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AdvanceFour() {
+export default function BeginnerLegs() {
     return(
         <>
         </>

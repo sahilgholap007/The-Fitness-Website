@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AdvanceSix() {
+export default function IntermediateLegs() {
     return(
         <>
         </>
