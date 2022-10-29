@@ -309,7 +309,36 @@ a{
 .Beginner{
     height: 100vh;
     width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("./Images/Beginner-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
+
+.intermediate{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("./Images/Intermediate-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.AdvancePage{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.3), rgba(4,9,30,0.3)), url("./Images/Advance-Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
 
 .Pro{
     height: 100vh;
@@ -368,8 +397,8 @@ h2{
 .signup-btn{
     height: 50px;
     width: 200px;
-    background-color: #758283;
-    border-radius: 20px;
+    background-color: #000;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,8 +411,8 @@ h2{
 .signin-btn{
     height: 50px;
     width: 200px;
-    background-color: #758283;
-    border-radius: 20px;
+    background-color: #000;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -512,15 +541,18 @@ input{
 .Signup:hover .signup-btn{
     transform:scale3d(1.1, 1.1, 2.1);
     transition: 0.5s;
-    border-radius: 0%;
     border: 1px solid #fff;
-    background-color: #000;
+    background-color: #fff;
+    color:#000;
 }
+
+
 
 .Signin:hover .signin-btn{
     transform:scale3d(1.1, 1.1, 2.1);
     transition: 0.5s;
-    border-radius: 0%;
+    background-color: #fff;
+    color: #000;
 }
 
 
@@ -634,11 +666,17 @@ h4{
     align-items: center;
     flex-direction: column;
     backface-visibility: hidden;
+    padding: 10px;
 }
 
 .Flip-card-front{
     background-color: #242B2E;
-    
+}
+
+#Dumbbellpress{
+    background-image: url("./Images/Exercises/Beginner/dumbbell-bench-press-1000x1000.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 .Flip-card-back{
@@ -702,13 +740,18 @@ h4{
 }
 
 .payment-btn{
-    padding: 25px;
     color: #fff;
     background-color: #242B2E;
     border: 1px solid #fff;
     font-family: 'Bebas Neue';
     font-size: 20px;
     margin-top: 10x;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
 }
 
 .payment-btn:hover{
@@ -797,7 +840,6 @@ h4{
     width: 50px;
 }
 
-
 .workout-form{
     height: 105vh;
     width: 35%;
@@ -827,4 +869,71 @@ h4{
     margin-right: 20px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.upload{
+    height:50px;
+    width: 150px;
+    margin-bottom: 15px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    border-color: #fff;
+}
+
+.upload:hover { 
+    background-color: #fff;
+    color: #000;
+    transition: 0.5s;
+}
+
+.file{
+    height: 60px;
+    width: 150px;
+    margin-top:-10px;
+    margin-bottom: -20px;
+    background: transparent;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    font-size: 17px;
+    border: none;
+}
+
+.flex-one h2{
+    font-size: 25px;
+    color: #fff;
+    font-family: 'Bebas Neue';
+    margin-top: 210px;
+    margin-left: 80px;
+}
+
+#KneePushups{
+    background-image: url("./Images/Exercises/Beginner/KneePushups.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#PecDecFly{
+    background-image: url("./Images/Exercises/Beginner/peckdeck.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#InclinedDBpress{
+    background-image: url("./Images/Exercises/Beginner/incline-dumbbell-bench-press-1000x1000.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#Declinedumbbellflye{
+    background-image: url("./Images/Exercises/Beginner/decline-dumbbell-fly-1000x1000.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#KneeDiamondpushups{
+    background-image: url("./Images/Exercises/Beginner/diamondpushups.png");
+    background-size: cover;
+    background-position: center;
 }
