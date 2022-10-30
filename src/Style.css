@@ -249,6 +249,10 @@ a{
     width: 100%;
 }
 
+#know{
+    background-color: #242B2E;
+}
+
 .circle{
     height: 200px;
     width: 200px;
@@ -667,6 +671,7 @@ h4{
     flex-direction: column;
     backface-visibility: hidden;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .Flip-card-front{
@@ -680,7 +685,7 @@ h4{
 }
 
 .Flip-card-back{
-    background-color: red;
+    background-color: #242B2E;
     transform: rotateY(180deg);
 }
 
@@ -697,7 +702,7 @@ h4{
 }
 
 #workout-plan{
-    background-color: #242B2E;
+    background-color: #000;
 }
 
 #diet-plan{
@@ -708,7 +713,6 @@ h4{
     width: 600px;
     margin-left: -30%;
     margin-top: 5%;
-    
 }
 
 .section{
@@ -764,14 +768,15 @@ h4{
     height: 100vh;
     width: 100%;
     background-color: #000;
-    display: flex;
     align-items: center;
 }
 
 .knowmore__container{
-    width: 500px;
-    height: 300px;
-    margin-left: 100px;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
 }
 
 .knowmore__container p{
@@ -934,6 +939,267 @@ h4{
 
 #KneeDiamondpushups{
     background-image: url("./Images/Exercises/Beginner/diamondpushups.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#wallSquat{
+    background-image: url("./Images/Exercises/Beginner/wallsquat.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#SplitSquat{
+    background-image: url("./Images/Exercises/Beginner/splitsqats.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#GlutesBridge{
+    background-image: url("./Images/Exercises/Beginner/glutesbridge.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#DumbbellDeadlift{
+    background-image: url("./Images/Exercises/Beginner/dumbbell-deadlift.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#HeelTouchSide{
+    background-image: url("./Images/Exercises/Beginner/heeltouch.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#DumbbellGobletSquats{
+    background-image: url("./Images/Exercises/Beginner/DBGobletSquats.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#BackSlapsWrapAroundStretch{
+    background-image: url("./Images/Exercises/Beginner/BackSlapsWrapAroundStretch.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ArnoldPress{
+    background-image: url("./Images/Exercises/Beginner/ARNOLD.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#Bent-OverRows{
+    background-image: url("./Images/Exercises/Beginner/shutupandbendover.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ShoulderPress{
+    background-image: url("./Images/Exercises/Beginner/shoulderpress.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#LateralRaises{
+    background-image: url("./Images/Exercises/Beginner/latralraises.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#FrontRaises{
+    background-image: url("./Images/Exercises/Beginner/frontraise.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#Hyperextensions{
+    background-image: url("./Images/Exercises/Beginner/Hyperextensions.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#KettlebellDeadlifts{
+    background-image: url("./Images/Exercises/Beginner/KettlebellDeadlifts.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#CatCowPose{
+    background-image: url("./Images/Exercises/Beginner/cat.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#KettlebellRenegadeRow{
+    background-image: url("./Images/Exercises/Beginner/KettlebellRenegadeRow.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#ChildsPose{
+    background-image: url("./Images/Exercises/Beginner/childpose.png");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#beginner-five{
+    background-image: url("./Images/hero-abs-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-one{
+    background-image: url("./Images/hero-chest-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-three{
+    background-image: url("./Images/hero-shoulders-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-four{
+    background-image: url("./Images/hero-biceps-260x190.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-six{
+    background-image: url("./Images/back.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#beginner-two{
+    background-image: url("./Images/legs-flex.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#diet-cards{
+    width: 350px;
+    height: 500px;
+}
+
+#keto{
+    background-image: url("./Images/keto.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#high-protein{
+    background-image: url("./Images/highprotein.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#high-carb{
+    background-image: url("./Images/highcarb.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#keto h4{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 100px;
+}
+
+#high-carb h4{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 100px;
+}
+
+#high-protein h4{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 130px;
+}
+
+#barbell-bench-press{
+    background-image: url("./Images/Exercises/Advance/barbell-bench-press.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#Weighted-pushups{
+    background-image: url("./Images/Exercises/Advance/weighted-push-up.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#Triceps-dips{
+    background-image: url("./Images/Exercises/Advance/Triceps-Dips.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#decline-onearm{
+    background-image: url("./Images/Exercises/Advance/One-Arm-Decline-Cable-Fly.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#decline-pushups{
+    background-image: url("./Images/Exercises/Advance/decline-push-up-form.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+#Dumbell-pullover{
+    background-image: url("./Images/Exercises/Advance/Dumbbell-Pullover.gif");
+    background-size: cover;
+    background-position: center;
+}
+
+.text-box{
+    width: 600px;
+    height: 400px;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+.knowmore__container:nth-of-type(3){
+    background-color: #242B2E;
+}
+
+.knowmore__container:nth-of-type(1){
+    background-color: #242B2E;
+}
+
+.images{
+    height: 400px;
+    width: 300px;
+    margin-left: 250px;
+}
+
+#gym-trainer-one{
+    background-image: url("./Images/trainer1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gym-trainer-two{
+    background-image: url("./Images/trainer2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#gym-trainer-three{
+    background-image: url("./Images/trainer3.jpg");
     background-size: cover;
     background-position: center;
 }

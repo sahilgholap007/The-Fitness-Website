@@ -5,7 +5,7 @@ export default function BeginnerBack() {
         <section className="Advance">
             <div className="card-container">
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="Hyperextensions" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -13,7 +13,7 @@ export default function BeginnerBack() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="KettlebellDeadlifts" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -21,7 +21,7 @@ export default function BeginnerBack() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="CatCowPose" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -31,7 +31,7 @@ export default function BeginnerBack() {
             </div>
             <div className="card-container">
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                <div className="Flip-card-front" id="Bent-OverRows">
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -39,7 +39,7 @@ export default function BeginnerBack() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="KettlebellRenegadeRow" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -47,7 +47,7 @@ export default function BeginnerBack() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="ChildsPose" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">

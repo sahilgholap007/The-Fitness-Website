@@ -17,7 +17,7 @@ export default function ProLanding() {
 
     return (
         <section className='pro-landing'>
-            <section className='section'>            
+            <section className='section' id='know'>            
                 <div className='pro-nav'>
                     <h1>User: {user?.email}</h1>
                     {/*eslint-disable-next-line*/}

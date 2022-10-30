@@ -5,7 +5,7 @@ export default function AdvanceChest() {
         <section className="Advance">
             <div className="card-container">
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="barbell-bench-press" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -13,7 +13,7 @@ export default function AdvanceChest() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="Weighted-pushups" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -21,7 +21,7 @@ export default function AdvanceChest() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="Triceps-dips" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -31,7 +31,7 @@ export default function AdvanceChest() {
             </div>
             <div className="card-container">
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="decline-onearm" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -39,7 +39,7 @@ export default function AdvanceChest() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="decline-pushups" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
@@ -47,7 +47,7 @@ export default function AdvanceChest() {
                     </div>
                 </div>
                 <div className="Flip-card">
-                    <div className="Flip-card-front">
+                    <div className="Flip-card-front" id="Dumbell-pullover" >
                         <h4>front</h4>
                     </div>
                     <div className="Flip-card-back">
