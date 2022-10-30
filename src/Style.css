@@ -259,7 +259,7 @@ a{
     background-color: #000;
     border-radius: 50%;
     transition: transform .2s;
-    
+    border: 1px solid white;
 }
 
 .circle:hover{
