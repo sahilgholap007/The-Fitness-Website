@@ -78,7 +78,7 @@ export default function CustomWorkout() {
                     <input onChange={(event)=>{setNewGoal(event.target.value)}}></input>
                 </div>
                 {/* eslint-disable-next-line */}
-                <a id="btn-a" className="payment-btn" onClick={redirect_Page}>Submit</a>      
+                <a className="payment-btn" onClick={redirect_Page}>Submit</a>      
             </div>
         </section>
     )

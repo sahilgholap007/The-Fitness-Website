@@ -5,7 +5,8 @@ export default function Knowmore() {
         <section className="knowmore">
             <div className="knowmore__container">
                 <div className="text-box">
-                    <h1>Know More</h1>
+                    <h1>john Eysanse</h1>
+                    <p>Personal Trainer</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
                         voluptates, quod, voluptate, voluptas quia voluptatem quibusdam
@@ -18,7 +19,8 @@ export default function Knowmore() {
             </div>
             <div className="knowmore__container">
                 <div className="text-box">
-                    <h1>Know More</h1>
+                    <h1>Robert Holland</h1>
+                    <p>Personal Trainer</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
                         voluptates, quod, voluptate, voluptas quia voluptatem quibusdam
@@ -31,7 +33,8 @@ export default function Knowmore() {
             </div>
             <div className="knowmore__container">
                 <div className="text-box">
-                    <h1>Know More</h1>
+                    <h1>DR. mima amalkova</h1>
+                    <p>Nutritionist, Dietician</p>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
                         voluptates, quod, voluptate, voluptas quia voluptatem quibusdam
