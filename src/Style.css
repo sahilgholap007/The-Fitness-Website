@@ -701,6 +701,9 @@ h4{
     position: absolute;
 }
 
+.pro-nav a{
+    margin-left: 80px;
+}
 #workout-plan{
     background-color: #000;
 }
