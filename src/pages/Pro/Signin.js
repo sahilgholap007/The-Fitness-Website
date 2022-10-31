@@ -2,34 +2,31 @@ import React from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase-config";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 export default function Signin() {
 
     const [loginEmail, setLoginEmail] = useState("");
     const [loginPassword, setLoginPassword] = useState("");
+    const [error, setError] = useState("")
+
+    const Navigate = useNavigate()
 
     const login = async () => {
         try {
-           const user = await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
-            console.log(user);
+            await signInWithEmailAndPassword(auth, loginEmail, loginPassword);
+            Navigate('/pro/prolanding')
         } catch (error) {
-            console.log(error);
+            setError(error.message)
         }
-    }
-
-    let redirect_Page = () => {
-        login()
-        let tID = setTimeout(function () {
-            window.location.href = "/Pro/ProLanding";
-            window.clearTimeout(tID);
-        }, 2000);
     }
 
     return(
         <section className='Signin-form'>
             <div className="Signin-form-container">
                 <h1>Sign In</h1>
+                {error && <alert>{error}</alert>}
                 <input type="text" placeholder="User Email" onChange={(event) => {
                     setLoginEmail(event.target.value)
                 }}/>
@@ -38,7 +35,7 @@ export default function Signin() {
                 }}/>
                 <div className="signin-btns">
                     {/*eslint-disable-next-line*/}
-                    <a id="pad" onClick={redirect_Page}>Log In</a>
+                    <a id="pad" onClick={login}>Log In</a>
                     <a href="/Pro/Signup">Create Account</a>
                 </div>
             </div>

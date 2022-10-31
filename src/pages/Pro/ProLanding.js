@@ -2,10 +2,13 @@ import React from 'react'
 import {auth} from '../../firebase-config'
 import { useState } from 'react'
 import { onAuthStateChanged,  signOut} from "firebase/auth";
+import { useNavigate } from 'react-router-dom';
 
 export default function ProLanding() {
 
     const [user, setUser] = useState({});
+
+    const Navigate = useNavigate()
 
     onAuthStateChanged(auth, (currentUser)=>{
         setUser(currentUser);
@@ -13,6 +16,7 @@ export default function ProLanding() {
 
     const logout = async () => {
         await signOut(auth);
+        Navigate('/Pro/Signin')
     }
 
     return (
@@ -22,11 +26,9 @@ export default function ProLanding() {
                     <h1>User: {user?.email}</h1>
                     {/*eslint-disable-next-line*/}
                     <a onClick={logout}>Sign out</a>
-                    {/*eslint-disable-next-line*/}
-                    <a href='/Pro/Signin'>Log In</a>
                 </div>
                 <div className='text-alignment'>
-                    <h1>Know Moree</h1>
+                    <h1>Know More</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the</p>
                 </div>    
                 <a id='pro-btn' href='/pro/ProLanding/Knowmore'>Discover</a>      

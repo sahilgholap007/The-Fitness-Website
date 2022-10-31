@@ -1211,3 +1211,9 @@ h4{
     background-size: cover;
     background-position: center;
 }
+
+alert{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    color: white;
+}
