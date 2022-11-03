@@ -277,6 +277,31 @@ body::-webkit-scrollbar {
     
   }
 
+  #get-started{
+    width: 150px;
+    height: 50px;
+    background-color: #000;
+    border: 1px solid white;
+  }
+
+  #get-started a{
+    color: #fff;
+    font-family: 'ROBOTO';
+    font-size: 17px;
+    text-decoration: none;
+  }
+
+  #get-started:hover{
+    background-color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  #get-started:hover a{
+    color: black;
+    transition: 0.5s;
+  }
+
 
 .circle{
     height: 200px;
