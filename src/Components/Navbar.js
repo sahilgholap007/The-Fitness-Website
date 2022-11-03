@@ -1,5 +1,5 @@
 import React from 'react'
-import T from "../Images/T.gif"
+import T from "../Images/t.png"
 
 export default function navbar(){
   return (
