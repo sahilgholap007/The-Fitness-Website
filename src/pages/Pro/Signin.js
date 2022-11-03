@@ -3,6 +3,8 @@ import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase-config";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
+
 
 
 export default function Signin() {
@@ -19,8 +21,30 @@ export default function Signin() {
             Navigate('/pro/prolanding')
         } catch (error) {
             setError(error.message)
+            console.log(error.message)
         }
     }
+
+    //google 
+
+    const provider = new GoogleAuthProvider()
+    const signInWithGoogle = async() => {
+        try{
+            await signInWithPopup(auth, provider)
+            .then((result)=>{
+                const name = result.user.displayName
+                const profilePic = result.user.photoURL
+
+                localStorage.setItem("name", name)
+                localStorage.setItem("profilePic", profilePic)
+                
+                Navigate('/pro/prolanding')
+            })
+        }catch(error){
+            console.log(error.message)
+        }
+    }
+
 
     return(
         <section className='Signin-form'>
@@ -33,10 +57,15 @@ export default function Signin() {
                 <input type="password" placeholder="Enter Password" onChange={(event) => {
                     setLoginPassword(event.target.value)
                 }}/>
+
+                <button type="button" class="login-with-google-btn" onClick={signInWithGoogle} >
+                    Sign in with Google
+                </button>
+
                 <div className="signin-btns">
                     {/*eslint-disable-next-line*/}
                     <a id="pad" onClick={login}>Log In</a>
-                    <a href="/Pro/Signup">Create Account</a>
+                    <a href="/Pro/Signup">Create Account</a> 
                 </div>
             </div>
         </section>

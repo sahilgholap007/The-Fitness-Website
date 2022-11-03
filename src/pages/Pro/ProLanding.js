@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { onAuthStateChanged,  signOut} from "firebase/auth";
 import { useNavigate } from 'react-router-dom';
 
+
 export default function ProLanding() {
 
     const [user, setUser] = useState({});
@@ -16,6 +17,7 @@ export default function ProLanding() {
 
     const logout = async () => {
         await signOut(auth);
+        localStorage.clear();
         Navigate('/Pro/Signin')
     }
 
@@ -23,7 +25,10 @@ export default function ProLanding() {
         <section className='pro-landing'>
             <section className='section' id='know'>            
                 <div className='pro-nav'>
-                    <h1>User: {user?.email}</h1>
+                    <div className='pro-nav-container'>
+                        <img alt='' src={localStorage.getItem("profilePic")} />
+                        <h1>{user?.email} <br/> {localStorage.getItem("name")}</h1>
+                    </div>
                     {/*eslint-disable-next-line*/}
                     <a onClick={logout}>Sign out</a>
                 </div>
