@@ -1,0 +1,23 @@
+[debug] [2022-11-03T14:10:17.699Z] ----------------------------------------------------------------------
+[debug] [2022-11-03T14:10:17.702Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ramesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:disable
+[debug] [2022-11-03T14:10:17.702Z] CLI Version:   11.15.0
+[debug] [2022-11-03T14:10:17.703Z] Platform:      win32
+[debug] [2022-11-03T14:10:17.703Z] Node Version:  v16.16.0
+[debug] [2022-11-03T14:10:17.704Z] Time:          Thu Nov 03 2022 19:40:17 GMT+0530 (India Standard Time)
+[debug] [2022-11-03T14:10:17.705Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-03T14:10:17.718Z] > refreshing access token with scopes: []
+[debug] [2022-11-03T14:10:17.721Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-11-03T14:10:17.722Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-03T14:10:17.972Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-11-03T14:10:17.973Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-11-03T14:10:18.358Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/undefined [none]
+[debug] [2022-11-03T14:10:18.887Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/undefined 403
+[debug] [2022-11-03T14:10:18.887Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/undefined {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-11-03T14:10:18.889Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-11-03T14:10:19.046Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Ramesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Ramesh\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project undefined. Please make sure the project exists and your account has permission to access it.
